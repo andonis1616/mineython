@@ -10,6 +10,8 @@ WATER = 2
 COAL = 3
 ROCK = 4
 LAVA = 5
+CLOUD = 6
+BIRD = 7
 resources = [DIRT, GRASS, WATER, COAL, ROCK, LAVA]
 
 #Colors
@@ -28,7 +30,9 @@ textures = {
 	WATER : pygame.image.load('WATER.png'),
 	COAL : pygame.image.load('COAL.png'),
 	ROCK : pygame.image.load('ROCK.png'),
-	LAVA : pygame.image.load('LAVA.png')
+	LAVA : pygame.image.load('LAVA.png'),
+	CLOUD : pygame.image.load('CLOUD.png'),
+	BIRD : pygame.image.load('BIRD.png')
 }
 
 #Game dimentions
@@ -58,7 +62,7 @@ for w in range(MAPHEIGHT):
 			tile = ROCK
 		elif randomNumber == 5 or randomNumber == 6:
 			tile = WATER
-		elif randomNumber >=7 and randomNumber <= 9:
+		elif randomNumber >= 7 and randomNumber <= 9:
 			tile = GRASS
 		else:
 			tile = DIRT
